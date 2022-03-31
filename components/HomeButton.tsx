@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
 const HomeButton: React.FC<IProps> = (props) => {
   <TouchableHighlight>
     <View style={[styles.button, props.buttonStyle]}>
-      <Image style={styles.icon} source={require('./assets/someCoolIcon.png')} />
       <Text style={[styles.label, props.labelStyle]}>
         {props.label}
       </Text>
@@ -38,3 +37,5 @@ const HomeButton: React.FC<IProps> = (props) => {
 
 
 export default HomeButton;
+
+//      <Image style={styles.icon} source={require('./assets/someCoolIcon.png')} />

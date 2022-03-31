@@ -1,24 +1,46 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Text} from 'react-native';
 //import { StyleSheet, Text, View, Image } from 'react-native';
 import { RootNavigator } from './navigation/RootNavigator';
 
 //import { ClubsScreen } from './screens/Clubs'
+/*
+import axios from 'axios';
+
+const api = axios.create({
+  baseURL: `http://localhost:5000/clubs/read`
+})
+*/
 
 
+//export class App extends Component {
 export default function App() {
-//  return <ClubsScreen />
   return (
-    //<View style={styles.container} >
-      <NavigationContainer>
-        <RootNavigator />
-        <StatusBar style="auto" />
-      </NavigationContainer>
-    //</View>
-  );
-}
+    <NavigationContainer>
+      <RootNavigator />
+      <StatusBar style="auto" />
+    </NavigationContainer>
+  )
+};
+
+
+
+/*
+  return (
+    <View style={styles.container} >
+    <Text> App </Text>
+    </View>
+  )
+  constructor(){
+    super();
+      api.get('/').then(res => {
+          console.log(res.data)
+      })
+  }
+  return <ClubsScreen />
+*/
 
 const styles = StyleSheet.create({
   container: {
